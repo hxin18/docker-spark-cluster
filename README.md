@@ -36,3 +36,8 @@ start-dfs.sh
 start-yarn.sh
 start-all.sh
 ```
+- You can then access web mannger at three potrs:
+ 1.HDFS:cloud1:50070
+ 2.Yarn:cloud1:8088
+ 3.Spark:cloud1:8080
+
