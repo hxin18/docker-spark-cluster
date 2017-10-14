@@ -1,5 +1,5 @@
 # docker-spark-cluster
-To deploy hadoop and spark and config cluster in docker
+To deploy hadoop and spark and config cluster in dockers in ubuntu 16.04
 
 ## Build
 ```bash
