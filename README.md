@@ -4,6 +4,7 @@ To deploy hadoop and spark and config cluster in docker
 ## Build
 ```bash
 docker build .
+docker tag IMAGE_ID yuchen/spark
 ```
 
 ## Deploy a cluster with 3 nodes
