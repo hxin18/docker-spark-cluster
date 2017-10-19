@@ -60,14 +60,14 @@
 # - SPARK_IDENT_STRING  A string representing this instance of spark. (Default: $USER)
 # - SPARK_NICENESS      The scheduling priority for daemons. (Default: 0)
 # - SPARK_NO_DAEMONIZE  Run the proposed command in the foreground. It will not output a PID file.
-export SPARK_MASTER_IP=cloud1
-export SPARK_WORKER_MEMORY=128m 
+export SPARK_MASTER_HOST=cloud1
+export SPARK_WORKER_MEMORY=512m
+export SPARK_EXECUTOR_MEMORY=512M
 export JAVA_HOME=/usr/jdk1.8.0_144
-export SCALA_HOME=/usr/scala-2.12.3
-export SPARK_HOME=/usr/spark-2.2.0-bin-hadoop2.7
+export SPARK_HOME=/usr/spark-2.2.0-bin-without-hadoop
 export HADOOP_CONF_DIR=/usr/hadoop-2.7.4/etc/hadoop
 export SPARK_LIBRARY_PATH=$$SPARK_HOME/lib 
-export SCALA_LIBRARY_PATH=$SPARK_LIBRARY_PATH 
 export SPARK_WORKER_CORES=1 
 export SPARK_WORKER_INSTANCES=1 
 export SPARK_MASTER_PORT=7077
+export SPARK_DIST_CLASSPATH=$(/usr/hadoop-2.7.4/bin/hadoop classpath)
