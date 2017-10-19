@@ -7,7 +7,7 @@ docker build .
 docker tag IMAGE_ID yuchen/spark
 ```
 
-## Deploy a cluster with 3 nodes
+## Deploy a hadoop cluster with 3 nodes
 - Run three containers: cloud1, cloud2 and cloud3
 ```bash
 sudo docker run --name cloud1 -h cloud1 --add-host cloud1:172.17.0.2 --add-host cloud2:172.17.0.3 --add-host cloud3:172.17.0.4 -it yuchen/spark
@@ -36,6 +36,14 @@ start-dfs.sh
 start-yarn.sh
 start-all.sh
 ```
+## Run Spark on hadoop cluster
+- Run in cloud1:
+```bash
+cd /usr/spark-2.2.0-bin-without-hadoop/
+sbin/start-master.sh
+sbin/start-slaves.sh
+```
+## Test
 - You can then access web mannger at three potrs:
  1. HDFS:    cloud1:50070
  2. Yarn:    cloud1:8088
