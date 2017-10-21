@@ -1,4 +1,4 @@
-## Put your downloaded tar files here:
+## You can download the required tar here:https://pan.baidu.com/s/1kV9V3vx code:tufe
 ``` bash
 hadoop-2.7.4.tar.gz
 jdk-8u144-linux-x64.tar.gz
