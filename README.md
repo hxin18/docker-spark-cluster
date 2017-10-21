@@ -31,7 +31,7 @@ hadoop-daemon.sh start journalnode
 ```bash
 hdfs zkfc -formatZK
 hdfs namenode -format
-
+＃before formatting remember to execute stop-all.sh
 start-dfs.sh
 start-yarn.sh
 start-all.sh
